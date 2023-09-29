@@ -85,7 +85,7 @@ body {
     display: inline-block;
 }
 
-.carousel img:first-child {
+/* .carousel img:first-child {
     margin-left: 0;
 }
 
@@ -99,4 +99,47 @@ body {
     .carousel img {
         width: 100%;
     }
+} */
+
+/* General styles go here */
+
+/* Mobile devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    .text-container {
+        margin-bottom: 10px;
+    }
+
+    .carousel img {
+        width: 100%;
+    }
 }
+
+/* Tablets and larger devices (768px and above) */
+@media screen and (min-width: 768px) {
+    .text-container {
+        margin-bottom: 20px;
+    }
+
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+
+/* Desktops and larger devices (992px and above) */
+@media screen and (min-width: 992px) {
+    .text-container {
+        margin-bottom: 30px;
+    }
+
+    .carousel img {
+        width: calc(100% / 3);
+    }
+}
+
+/* Large desktops and larger devices (1200px and above) */
+@media screen and (min-width: 1200px) {
+    .carousel img {
+        width: calc(100% / 4);
+    }
+}
+
