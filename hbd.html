@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -16,7 +16,7 @@
                 extend: {
                     fontFamily: {
                         // 'smokin': ['Smokum', 'cursive'],
-                        'bigelow': ['Bigelow Rules', 'cursive'],
+                        'rouge': ['Rouge Script', 'cursive'],
                     },
                     colors: {
                     }
@@ -28,9 +28,13 @@
 </head>
 
 <body>
+    <div class="text-container">
+        <p class="font-rouge text-sky-500 text-8xl">Thirty, Flirty and Thriving</p>
+    </div>
+
     <div class="wrapper">
         <i id="left" class="fa-solid fa-angle-left"></i>
-        <div class="carousel">
+        <div class="carousel flex items-center mb-6">
             <img src="images/65741029992__5C6B4CC5-AD9F-4A5A-B546-84F393722F08.jpeg" alt="">
             <img src="images/IMG_5004.jpeg" alt="">
             <img src="images/IMG_0741.jpeg" alt="">
@@ -49,8 +53,10 @@
         </div>
         <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
+
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
+
 </html>
 
 
